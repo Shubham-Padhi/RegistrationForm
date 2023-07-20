@@ -1,11 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import RegistrationForm from './components/RegistrationForm';
+import React, { useState } from 'react';
+import StudentForm from './components/StudentForm';
+import StudentList from './components/StudentList';
+
 
 function App() {
+  const [students, setStudents] = useState([]);
+
+  const addStudent = (student) => {
+    setStudents([...students, student]);
+  };
+
   return (
     <div>
-      <RegistrationForm/>
+      <h1>Student Admission System</h1>
+      <StudentForm addStudent={addStudent}/>
+     <StudentList  students={students}/>
     </div>
   );
 }
