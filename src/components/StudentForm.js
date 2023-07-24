@@ -39,7 +39,7 @@ function StudentForm({ addStudent }) {
         <label>Email:</label>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit">Push</button>
     </form>
   );
 }

@@ -18,14 +18,14 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   
   form {
+    background-image: url(2.jpg);
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #792a2a;
     border-radius: 5px;
   }
   
@@ -48,7 +48,7 @@ body {
   button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #ff0004;
     color: #fff;
     border: none;
     border-radius: 5px;

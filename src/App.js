@@ -10,6 +10,7 @@ function App() {
     setStudents([...students, student]);
   };
 
+
   return (
     <div>
       <h1>Student Admission System</h1>
