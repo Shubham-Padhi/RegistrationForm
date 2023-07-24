@@ -7,7 +7,7 @@ body {
     background-position: 100%;
    
   }
-  
+
   .container {
     max-width: 800px;
     margin: 0 auto;
@@ -19,7 +19,7 @@ body {
     margin-bottom: 20px;
   }
 
-  
+
   form {
     background-image: url(2.jpg);
     max-width: 400px;
@@ -72,4 +72,12 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
+  .add{
+    background-color: #c9f7d0;
+    font-style: inherit;
+    text-shadow: #bbb5b5;
+    text-shadow: 10cm;
+    
+    
+
+  }

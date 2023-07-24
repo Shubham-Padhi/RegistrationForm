@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 function StudentList({ students }) {
   return (
-    <div>
+    <div className='add'>
       <h2>Admitted Students</h2>
       <ul>
         {students.map((student) => (
