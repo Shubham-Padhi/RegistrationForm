@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <h1>Student Admission System</h1>
+      <h1>Online Exam</h1>
       <StudentForm addStudent={addStudent}/>
      <StudentList  students={students}/>
     </div>

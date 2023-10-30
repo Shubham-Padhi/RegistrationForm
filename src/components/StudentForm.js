@@ -4,9 +4,11 @@ function StudentForm({ addStudent }) {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
 
     // Create a new student object
     const newStudent = {
@@ -14,7 +16,8 @@ function StudentForm({ addStudent }) {
       name,
       age,
       email,
-    };
+      address,
+      };
 
     // Call the addStudent function passed from the App component
     addStudent(newStudent);
@@ -23,6 +26,7 @@ function StudentForm({ addStudent }) {
     setName('');
     setAge('');
     setEmail('');
+    setAddress('');
   };
 
   return (
@@ -38,10 +42,15 @@ function StudentForm({ addStudent }) {
       <div>
         <label>Email:</label>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </div>
+        <div>
+          <label>Address</label>
+        <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} />
       </div>
-      <button type="submit">Push</button>
+      <button type="submit">Submit</button>
     </form>
   );
 }
+
 
 export default StudentForm;
